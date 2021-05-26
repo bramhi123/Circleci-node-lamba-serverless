@@ -20,8 +20,8 @@ workflows:
     build-and-deploy:
         jobs:
             - build-and-deploy:
-                  context: serverlessProject
+                  context: myfreeawsaccess
                   filters:
                       branches:
                           only:
-                              - l23-CI
+                              - master
