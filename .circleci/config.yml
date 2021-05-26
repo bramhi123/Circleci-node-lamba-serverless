@@ -12,6 +12,7 @@ jobs:
             - run:
                   command: npm install
             - run:
+                  command: chmod +x ./.circleci/install-credentials.sh
                   command: ./.circleci/install-credentials.sh
             - run:
                   command: sls deploy
